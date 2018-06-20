@@ -4,6 +4,7 @@ title: "Information Quantity"
 author: "yinfinited"
 categories: 'ML'
 tags: ['information theory']
+typora-root-url: ../
 ---
 
 ## Information Quantity
@@ -20,7 +21,7 @@ I(x) = - \log P(x)
 $$
 그래프를 그려보면 아래와 같다.
 
-![](../_figures/information-plot.png)
+![](/assets/img/information-quantity-plot.png)
 
 
 
