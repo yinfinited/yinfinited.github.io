@@ -3,9 +3,11 @@ layout: post
 title: "Probability and Random Variable"
 author: "yinfinited"
 categories: 'Statistics'
-tags: ['stat']
+tags: ['Statistics']
 typora-root-url: ../
 ---
+
+통계학에서의 확률에 대해 알아본다.
 
 ## Trial
 
