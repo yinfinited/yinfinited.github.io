@@ -51,13 +51,15 @@ d1.after(d2)  // d1 is after than d2
 
 ## Elapsed 
 
-작업 수행 시간을 측정하고자 할 때는 java.util.Date 가 아니라 그냥 System 을 사용한다.
+작업 수행 시간을 측정하고자 할 때는 `java.util.Date` 가 아니라 그냥 `System.currentTimeMillis` 을 사용한다.
 
 ```scala
 val start = System.currentTimeMillis
 // do something
 val totalTime = System.currentTimeMillis - start
 ``` 
+
+보다 높은 정밀도가 필요한 경우 `nanoTime`을 사용한다.
 
 ```scala
 val start = System.nanoTime
