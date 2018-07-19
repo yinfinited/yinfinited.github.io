@@ -10,6 +10,8 @@ import java.util.Calendar
 import java.util.Date
 ```
 
+## now
+
 `java.util.Date` 이용해 오늘 날짜 구하기
 
 ```scala
@@ -26,6 +28,8 @@ val cal = Calendar.getInstance()
 cal.getTime()
 ```
 
+## operation
+
 연산을 지원한다.
 
 ```scala
@@ -33,6 +37,8 @@ val cal = Calendar.getInstance()
 cal.add(Calendar.MONTH, -1)
 cal.getTime()
 ```
+
+### compare
 
 두 날짜를 비교한다. 연산할 때는 Calendar 에서 했지만 단순 비교는 `java.util.Date` 상에서 가능하다.
 
@@ -47,6 +53,24 @@ val d1 = c1.getTime
 val d2 = c2.getTime
 
 d1.after(d2)  // d1 is after than d2
+```
+
+### string
+
+`java.util.Date` 와 `String` 간 상호 변환이 가능한데 format 을 알려주어야 한다.
+
+문자열을 날짜로 바꾸기 위해 `parse()` 를 사용한다.
+
+```scala
+val fmt = new SimpleDateFormat("yyyyMMddHHmm")
+val date = fmt.parse("201801081125")
+```
+
+날짜를 문자열로 바꾸기 위해 `format()` 을 사용한다.
+
+```scala
+val fmt = new SimpleDateFormat("yyyyMMddHHmm")
+fmt.format(new Date)
 ```
 
 ## Elapsed 
